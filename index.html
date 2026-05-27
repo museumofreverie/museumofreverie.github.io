@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museum of Reverie</title>
+
+  <!-- Playfair Display Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f3f0;
+      color: #2f2b27;
+      font-family: 'Playfair Display', serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 700px;
+    }
+
+    .logo {
+      width: 320px;
+      max-width: 80vw;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      filter: contrast(105%);
+    }
+
+    .coming-soon {
+      font-size: 1.2rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .line {
+      width: 60px;
+      height: 1px;
+      background-color: #2f2b27;
+      margin: 1.5rem auto;
+      opacity: 0.3;
+    }
+
+    @media (max-width: 600px) {
+      .coming-soon {
+        font-size: 1rem;
+        letter-spacing: 0.14em;
+      }
+
+      .logo {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    
+    <!-- Replace this with your scanned logo image -->
+    <img src="logo.png" alt="Museum of Reverie Logo" class="logo">
+
+    <div class="line"></div>
+
+    <p class="coming-soon">Coming Soon</p>
+
+  </div>
+</body>
+</html>
